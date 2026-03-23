@@ -1,0 +1,7 @@
+
+services:
+  - type: web
+    name: helal-mvp
+    env: node
+    buildCommand: "npm install"
+    startCommand: "node backend/server.js"
