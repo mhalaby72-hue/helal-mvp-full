@@ -2,6 +2,8 @@
 services:
   - type: web
     name: helal-mvp
-    env: node
+    env: PRONUNCIATION_MODEL_PATH=./backend/ai_models/pronunciation_model/model.pt
+LEARNING_MODEL_PATH=./backend/ai_models/learning_adapt/model.pkl
+PORT=5000
     buildCommand: "npm install"
     startCommand: "node backend/server.js"
